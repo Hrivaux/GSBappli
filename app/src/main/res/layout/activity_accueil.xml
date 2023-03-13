@@ -26,13 +26,18 @@
         android:layout_height="wrap_content"
         android:text="Retour"
          />
-    <Button
-        android:id="@+id/buttonGoToForm"
+    <ImageView
+        android:id="@+id/logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Rédaction d'un compte rendu" />
+        android:src="@drawable/gsblogo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
-
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
 </LinearLayout>
 
