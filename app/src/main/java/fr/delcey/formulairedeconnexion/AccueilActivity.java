@@ -14,14 +14,18 @@ public class AccueilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_accueil);
+        setContentView(R.layout.activity_redact_cr);
+        Button backButton = findViewById(R.id.back_button);
+        Button buttonGoToForm = findViewById(R.id.buttonGoToForm);
 
 
         TextView TextView = findViewById(R.id.TextView);
         String username = getIntent().getStringExtra("username");
         TextView.setText("Bienvenue, " + username + " !");
 
-        Button backButton = findViewById(R.id.back_button);
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -29,15 +33,13 @@ public class AccueilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        Button crButton = findViewById(R.id.buttonGoToForm);
-        crButton.setOnClickListener(new View.OnClickListener() {
+
+        buttonGoToForm.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View w) {
-                Intent intent = new Intent(AccueilActivity.this, RedactCr.class);
-                startActivity(intent);
+            public void onClick(View v) {
+                startActivity(new Intent(AccueilActivity.this, RedactCr.class));
             }
         });
-
-
     }
+
 }
