@@ -19,7 +19,7 @@ public class AccueilActivity extends AppCompatActivity {
 
         TextView TextView = findViewById(R.id.TextView);
         String username = getIntent().getStringExtra("username");
-        TextView.setText("Bienvenue, " + username + " !");
+        TextView.setText("Bienvenue, " + username + " !!");
 
         Button backButton = findViewById(R.id.back_button);
         backButton.setOnClickListener(new View.OnClickListener() {
