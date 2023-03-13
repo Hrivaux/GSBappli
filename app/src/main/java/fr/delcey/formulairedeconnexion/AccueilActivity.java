@@ -7,12 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import fr.delcey.formulairedeconnexion.R;
-
 public class AccueilActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
 
@@ -29,5 +29,15 @@ public class AccueilActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
+        Button crButton = findViewById(R.id.buttonGoToForm);
+        crButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View w) {
+                Intent intent = new Intent(AccueilActivity.this, RedactCr.class);
+                startActivity(intent);
+            }
+        });
+
+
+}
 }
