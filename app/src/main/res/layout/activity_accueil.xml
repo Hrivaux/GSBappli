@@ -13,10 +13,11 @@
         android:src="@drawable/gsblogo" />
 
     <TextView
-        android:id="@+id/TextView"
+        android:id="@+id/TextWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenue !"/>
+        android:text="Bienvenue !"
+        />
 
 
 
@@ -30,7 +31,7 @@
         android:id="@+id/buttonGoToForm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Rédaction du compte rendu"
+        android:text="redaction"
         />
 </LinearLayout>
 
