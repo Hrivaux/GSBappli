@@ -8,22 +8,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_gravity="center">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Inscription"
-            android:textSize="24sp"
-            android:textStyle="bold"
             android:gravity="center_horizontal"
-            android:paddingBottom="16dp"/>
+            android:paddingBottom="16dp"
+            android:text="Rédaction du compte rendu"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/et_nom_utilisateur"
+            android:id="@+id/et_nom_medecin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nom de l'utilisateur"
+            android:hint="Nom du médecin"
             android:inputType="text"
             android:maxLines="1"
             android:padding="12dp"
@@ -31,23 +33,10 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/et_prenom_utilisateur"
+            android:id="@+id/et_date_cr"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nom de l'utilisateur"
-            android:inputType="text"
-            android:maxLines="1"
-            android:padding="12dp"
-            android:textColorHint="@color/secondaryTextColor"
-            android:textSize="18sp" />
-
-
-
-        <EditText
-            android:id="@+id/et_email_utilisateur"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email de l'utilisateur"
+            android:hint="Date du compte rendu"
             android:inputType="text"
             android:maxLines="1"
             android:padding="12dp"
@@ -55,10 +44,33 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/et_mot_de_passe"
+            android:id="@+id/et_echantillon_teste"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Mot de passe"
+            android:hint="Echantillon testé"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColorHint="@color/secondaryTextColor"
+            android:textSize="18sp" />
+
+
+        <EditText
+            android:id="@+id/et_motif_visite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Motif de la visite"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="12dp"
+            android:textColorHint="@color/secondaryTextColor"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_avis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Avis"
             android:inputType="textPassword"
             android:maxLines="1"
             android:padding="12dp"
@@ -66,10 +78,10 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/et_adresse_utilisateur"
+            android:id="@+id/et_etat"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Adresse"
+            android:hint="Etat"
             android:inputType="text"
             android:maxLines="1"
             android:padding="12dp"
@@ -77,10 +89,10 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/et_ville"
+            android:id="@+id/et_nouvelle_visite"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ville"
+            android:hint="Nouvelle visite"
             android:inputType="text"
             android:maxLines="1"
             android:padding="12dp"
@@ -88,10 +100,10 @@
             android:textSize="18sp" />
 
         <EditText
-            android:id="@+id/et_code_postal"
+            android:id="@+id/et_commentaire"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Ville"
+            android:hint="Commentaire"
             android:inputType="text"
             android:maxLines="1"
             android:padding="12dp"
@@ -145,16 +157,16 @@
         </RadioGroup>
 -->
         <Button
-            android:id="@+id/btn_inscription"
+            android:id="@+id/btn_envoyer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="S'inscrire"
-            android:textSize="18sp"
-            android:padding="16dp"
-            android:background="@drawable/rounded_button"
-            android:textColor="@android:color/white"
             android:layout_marginTop="24dp"
-            android:onClick="inscription"/>
+            android:background="@drawable/rounded_button"
+            android:onClick="inscription"
+            android:padding="16dp"
+            android:text="Envoyer"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
 
     </LinearLayout>
 </ScrollView>
